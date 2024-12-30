@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="universitate">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fakultate" type="fakultateType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="fakultateType">
+        <xs:sequence>
+            <xs:element name="studiju_programma" type="studijuProgrammaType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="nosaukums" type="xs:string" use="required"/>
+        <xs:attribute name="fakultates_id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="studijuProgrammaType">
+        <xs:sequence>
+            <xs:element name="studiju_kurss" type="studijuKurssType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="nosaukums" type="xs:string" use="required"/>
+        <xs:attribute name="studiju_id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="studijuKurssType">
+        <xs:sequence>
+            <xs:element name="modulis" type="modulisType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="nosaukums" type="xs:string" use="required"/>
+        <xs:attribute name="kursa_id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="modulisType">
+        <xs:sequence>
+            <xs:element name="temats" type="tematsType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="nosaukums" type="xs:string" use="required"/>
+        <xs:attribute name="modula_id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tematsType">
+        <xs:sequence>
+            <xs:element name="apraksts" type="xs:string"/>
+            <xs:element name="kreditpunkti" type="kreditpunktiType"/>
+            <xs:element name="stundu_skaits" type="stunduSkaitsType"/>
+        </xs:sequence>
+        <xs:attribute name="nosaukums" type="xs:string" use="required"/>
+        <xs:attribute name="nosaukuma_id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="kreditpunktiType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="stunduSkaitsType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="16"/>
+            <xs:maxInclusive value="320"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

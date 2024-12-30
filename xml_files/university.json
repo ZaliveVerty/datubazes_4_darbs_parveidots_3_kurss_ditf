@@ -1,0 +1,81 @@
+{
+    "universitate": {
+      "fakultate": [
+        {
+          "nosaukums": "Datorikas fakultate",
+          "fakultates_id": 0,
+          "studiju_programma": {
+            "nosaukums": "Datorzinatnes",
+            "studiju_id": 0,
+            "studiju_kurss": [
+              {
+                "nosaukums": "Datu bazes",
+                "kursa_id": 0,
+                "modulis": [
+                  {
+                    "nosaukums": "Relaciju datu bazes",
+                    "modula_id": 0,
+                    "temats": [
+                      {
+                        "nosaukums": "SQL valoda",
+                        "temata_id": 0,
+                        "apraksts": "SQL vaicajumu veidosana un optimizacija",
+                        "kreditpunkti": 2,
+                        "stundu_skaits": 32
+                      },
+                      {
+                        "nosaukums": "Indeksesana",
+                        "temata_id": 1,
+                        "apraksts": "Datu bazu indeksu izveide un pielietosana",
+                        "kreditpunkti": 1,
+                        "stundu_skaits": 16
+                      }
+                    ]
+                  },
+                  {
+                    "nosaukums": "NoSQL datu bazes",
+                    "modula_id": 1,
+                    "temats": [
+                      {
+                        "nosaukums": "MongoDB",
+                        "temata_id": 2,
+                        "apraksts": "MongoDB datu bazes pamati",
+                        "kreditpunkti": 1,
+                        "stundu_skaits": 16
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nosaukums": "Programmesana",
+                "kursa_id": 1,
+                "modulis": [
+                  {
+                    "nosaukums": "Java programmesana",
+                    "modula_id": 2,
+                    "temats": [
+                      {
+                        "nosaukums": "Objektorienteta programmesana",
+                        "temata_id": 3,
+                        "apraksts": "OOP koncepti Java valoda",
+                        "kreditpunkti": 3,
+                        "stundu_skaits": 48
+                      },
+                      {
+                        "nosaukums": "Pavedienu programmesana",
+                        "temata_id": 4,
+                        "apraksts": "Pavedieni",
+                        "kreditpunkti": 2,
+                        "stundu_skaits": 32
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universitate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="university.xsd">
+    
+    <fakultate nosaukums="Datorikas fakultate" fakultates_id="0">
+        <studiju_programma nosaukums="Datorzinatnes" studiju_id="0">
+            <studiju_kurss nosaukums="Datu bazes" kursa_id="0">
+                <modulis nosaukums="Relaciju datu bazes" modula_id="0">
+                    <temats nosaukums="SQL valoda" temata_id="0">
+                        <apraksts>SQL vaicajumu veidosana un optimizacija</apraksts>
+                        <kreditpunkti>2</kreditpunkti>
+                        <stundu_skaits>32</stundu_skaits>
+                    </temats>
+                    <temats nosaukums="Indeksesana" temata_id="1">
+                        <apraksts>Datu bazu indeksu izveide un pielietosana</apraksts>
+                        <kreditpunkti>1</kreditpunkti>
+                        <stundu_skaits>16</stundu_skaits>
+                    </temats>
+                </modulis>
+                <modulis nosaukums="NoSQL datu bazes" modula_id="1">
+                    <temats nosaukums="MongoDB" temata_id="2">
+                        <apraksts>MongoDB datu bazes pamati</apraksts>
+                        <kreditpunkti>1</kreditpunkti>
+                        <stundu_skaits>16</stundu_skaits>
+                    </temats>
+                </modulis>
+            </studiju_kurss>
+            <studiju_kurss nosaukums="Programmesana" kursa_id="1">
+                <modulis nosaukums="Java programmesana" modula_id="2">
+                    <temats nosaukums="Objektorienteta programmesana" temata_id="3">
+                        <apraksts>OOP koncepti Java valoda</apraksts>
+                        <kreditpunkti>3</kreditpunkti>
+                        <stundu_skaits>48</stundu_skaits>
+                    </temats>
+                    <temats nosaukums="Pavedienu programmesana" temata_id="4">
+                        <apraksts>Pavedieni</apraksts>
+                        <kreditpunkti>2</kreditpunkti>
+                        <stundu_skaits>32</stundu_skaits>
+                    </temats>
+                </modulis>
+            </studiju_kurss>
+        </studiju_programma>
+    </fakultate>
+</universitate>
